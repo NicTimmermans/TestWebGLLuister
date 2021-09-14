@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1600 height=900></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/LuisterWebGL010.loader.js";
+      var loaderUrl = buildUrl + "/LuisterWebGL11.loader.js";
       var config = {
-        dataUrl: buildUrl + "/LuisterWebGL010.data",
-        frameworkUrl: buildUrl + "/LuisterWebGL010.framework.js",
-        codeUrl: buildUrl + "/LuisterWebGL010.wasm",
+        dataUrl: buildUrl + "/LuisterWebGL11.data",
+        frameworkUrl: buildUrl + "/LuisterWebGL11.framework.js",
+        codeUrl: buildUrl + "/LuisterWebGL11.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Luister",
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1600px";
-        canvas.style.height = "900px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
